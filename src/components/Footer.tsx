@@ -36,7 +36,7 @@ const Footer = () => {
               >
                 <Instagram size={18} />
               </a>
-              <a
+              {/* <a
                 href={SOCIAL.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const Footer = () => {
                 className="p-2 border border-white/15 hover:border-gold hover:text-gold transition-colors text-white/80"
               >
                 <Linkedin size={18} />
-              </a>
+              </a> */}
             </div>
           </div>
 

@@ -1,21 +1,20 @@
 /** Informações oficiais de contato Bumax Contabilidade. */
 export const PHONES = [
-  { label: "(75) 99191-5366", href: "tel:+5575991915366" },
   { label: "(75) 99180-6454", href: "tel:+5575991806454" },
+  { label: "(75) 99191-5366", href: "tel:+5575991915366" },
 ];
 
-export const WHATSAPP_NUMBER = "5575991915366";
+export const WHATSAPP_NUMBER = "5575991806454";
 export const WHATS = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Bumax`;
 
-export const EMAIL = "contato@bumax.com.br";
+export const EMAIL = "atendimento@bumaxcontabilidade.com";
 
 export const OFFICES = [
   {
     city: "Paulo Afonso / BA",
     address:
       "Av. Getúlio Vargas, 421 — 1º andar, sala 101 — Centro, Paulo Afonso — BA",
-    mapsQuery:
-      "Av.+Get%C3%BAlio+Vargas,+421+-+Centro,+Paulo+Afonso+-+BA",
+    mapsQuery: "Av.+Get%C3%BAlio+Vargas,+421+-+Centro,+Paulo+Afonso+-+BA",
   },
   {
     city: "João Pessoa / PB",
@@ -28,7 +27,6 @@ export const OFFICES = [
 
 export const SOCIAL = {
   instagram: "https://www.instagram.com/bumaxcontabilidade",
-  linkedin: "https://www.linkedin.com/company/bumaxcontabilidade",
 };
 
 export const STATES_SERVED = [

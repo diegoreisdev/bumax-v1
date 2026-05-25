@@ -115,7 +115,7 @@ const Sobre = () => {
                     className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink via-ink/85 to-transparent p-6 pt-16">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-6 pt-16">
                   <h3 className="text-xl font-bold">{f.name}</h3>
                   <p className="text-sm text-gold mt-1">{f.role}</p>
                 </div>
