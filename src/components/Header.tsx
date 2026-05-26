@@ -13,6 +13,7 @@ const nav = [
   { to: "/jornada", label: "Jornada" },
   { to: "/blog", label: "Blog" },
   { to: "/contato", label: "Contato" },
+  { to: "/cliente", label: "Cliente" },
 ];
 
 const Header = () => {
@@ -31,9 +32,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all bg-[#1e1e1e] ${
-        scrolled ? "shadow-soft backdrop-blur" : ""
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-all bg-[#1e1e1e] ${scrolled ? "shadow-soft backdrop-blur" : ""
+        }`}
     >
       <div className="container-wide flex h-20 items-center justify-between">
         <Logo variant="light" />
@@ -45,8 +45,7 @@ const Header = () => {
               to={item.to}
               end={item.to === "/"}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors hover:text-gold ${
-                  isActive ? "text-gold" : "text-white/85"
+                `text-sm font-medium transition-colors hover:text-gold ${isActive ? "text-gold" : "text-white/85"
                 }`
               }
             >
@@ -88,8 +87,7 @@ const Header = () => {
                 to={item.to}
                 end={item.to === "/"}
                 className={({ isActive }) =>
-                  `py-3 text-base font-medium border-b border-white/5 ${
-                    isActive ? "text-gold" : "text-white/85"
+                  `py-3 text-base font-medium border-b border-white/5 ${isActive ? "text-gold" : "text-white/85"
                   }`
                 }
               >

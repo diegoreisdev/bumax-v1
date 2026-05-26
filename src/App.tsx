@@ -10,6 +10,7 @@ import ServicoDetalhe from "./pages/ServicoDetalhe.tsx";
 import Resultados from "./pages/Resultados.tsx";
 import Blog from "./pages/Blog.tsx";
 import Jornada from "./pages/Jornada.tsx";
+import Cliente from "./pages/Cliente.tsx";
 import Contato from "./pages/Contato.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -27,10 +28,10 @@ const App = () => (
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/servicos/:slug" element={<ServicoDetalhe />} />
           <Route path="/resultados" element={<Resultados />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/jornada" element={<Jornada />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contato" element={<Contato />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/cliente" element={<Cliente />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

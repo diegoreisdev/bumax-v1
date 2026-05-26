@@ -6,10 +6,10 @@ import StatsSection from "@/components/StatsSection";
 import ServiceCard from "@/components/ServiceCard";
 import VideoTestimonialCard from "@/components/VideoTestimonialCard";
 import CTABlock from "@/components/CTABlock";
-import LeadForm from "@/components/LeadForm";
 import { SERVICES, SEGMENTS } from "@/data/services";
 import { VIDEO_TESTIMONIALS } from "@/data/testimonials";
 import { WHATS } from "@/data/contact";
+import { useEffect } from "react";
 
 const PILLARS = [
   {
@@ -30,6 +30,10 @@ const PILLARS = [
 ];
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Bumax Contabilidade";
+  }, []);
+
   return (
     <Layout>
       <HeroSection />

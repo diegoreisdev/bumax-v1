@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import LeadForm from "@/components/LeadForm";
 import { ArrowRight } from "lucide-react";
 
 const CATEGORIES = ["Todos", "Tributário", "Financeiro", "Gestão", "Empreendedorismo"];
@@ -36,11 +35,10 @@ const Blog = () => {
               <button
                 key={c}
                 onClick={() => setActive(c)}
-                className={`px-5 py-2 text-xs font-semibold border transition-colors ${
-                  active === c
-                    ? "bg-ink text-white border-ink"
-                    : "bg-white text-ink border-border hover:border-gold hover:text-gold"
-                }`}
+                className={`px-5 py-2 text-xs font-semibold border transition-colors ${active === c
+                  ? "bg-ink text-white border-ink"
+                  : "bg-white text-ink border-border hover:border-gold hover:text-gold"
+                  }`}
               >
                 {c}
               </button>
@@ -66,25 +64,6 @@ const Blog = () => {
                 </div>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Materiais ricos */}
-      <section className="section-dark relative overflow-hidden">
-        <div className="absolute inset-0 pattern-isotype opacity-[0.06] pointer-events-none" />
-        <div className="container-wide relative py-20 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="reveal">
-            <p className="text-xs tracking-[0.3em] text-gold mb-3">Material rico</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-              E-book: Planejamento Tributário 2025
-            </h2>
-            <p className="mt-5 text-base text-white/75 max-w-lg">
-              Um guia prático com estratégias que sua empresa pode aplicar ainda este ano.
-            </p>
-          </div>
-          <div className="reveal">
-            <LeadForm variant="dark" buttonLabel="Quero o e-book" />
           </div>
         </div>
       </section>
